@@ -3,146 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrinho 2026: Agro Forte, Futuro Sustentável</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f9f4;
+            color: #333;
+        }
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            color: #2e7d32;
+            border-bottom: 2px solid #81c784;
+            padding-bottom: 10px;
+        }
+        .image-container {
+            width: 100%;
+            height: 350px;
+            overflow: hidden;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #1b5e20;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <div class="container">
-            <h1>Agro Forte, Futuro Sustentável</h1>
-            <p>O equilíbrio perfeito entre a produção no campo e a preservação do meio ambiente.</p>
-        </div>
+        <h1>Agro Forte, Futuro Sustentável</h1>
+        <p>O equilíbrio perfeito entre a alta produção e a preservação do meio ambiente</p>
     </header>
 
-    <main class="container">
-        <section class="intro">
-            <h2>Alimentando a Nação</h2>
-            <p>O agronegócio é a força motriz do Brasil. Produzimos não apenas para nutrir nossa população, mas também para movimentar a economia, sempre com o compromisso de cuidar da terra, da água e da biodiversidade para as próximas gerações.</p>
-        </section>
+    <div class="container">
+        
+        <div class="section">
+            <h2>🌱 O Desafio do Século XXI</h2>
+            <p>Alimentar uma população global em crescimento exige um agronegócio forte, tecnológico e produtivo. No entanto, o verdadeiro sucesso do setor depende da sua capacidade de conservar o solo, a água e a biodiversidade.</p>
+            
+            <!-- Imagem de plantação sustentável utilizando Unsplash público -->
+            <div class="image-container">
+                <img src="https://unsplash.com" alt="Plantação verde e tecnologia agrícola moderna">
+            </div>
+        </div>
 
-        <section class="contador-secao">
-            <h2>Produção em Tempo Real</h2>
-            <p>Acompanhe a estimativa de alimentos cultivados com práticas sustentáveis no país:</p>
-            <div class="caixa-contador">
-                <span id="contador">0</span>
-                <p>Toneladas de alimentos colhidos de forma sustentável</p>
+        <div class="section">
+            <h2>🚜 Tecnologia a Serviço da Natureza</h2>
+            <p>A agricultura de precisão, o uso de bioinsumos, o plantio direto e a rotação de culturas são exemplos práticos de como a ciência impulsiona a colheita sem esgotar os recursos naturais do planeta.</p>
+            
+            <!-- Imagem de tecnologia e mãos na terra utilizando Unsplash público -->
+            <div class="image-container">
+                <img src="https://unsplash.com" alt="Mãos segurando terra com broto verde">
             </div>
-        </section>
+        </div>
 
-        <section class="cards">
-            <div class="card">
-                <h3>🌱 Produção</h3>
-                <p>Uso de tecnologias de ponta, como agricultura de precisão, para produzir mais em menos espaço, garantindo comida na mesa de todos.</p>
-            </div>
-            <div class="card">
-                <h3>🌍 Meio Ambiente</h3>
-                <p>Práticas como plantio direto, rotação de culturas e preservação de nascentes que protegem o nosso ecossistema.</p>
-            </div>
-        </section>
-    </main>
+    </div>
 
     <footer>
-        <p>&copy; 2026 - Projeto Agrinho. Conectando o campo, a tecnologia e a sustentabilidade.</p>
+        <p>&copy; 2026 - Agro Forte, Futuro Sustentável. Criado via GitHub Pages.</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
 
-body {
-    background-color: #f4f9f4;
-    color: #333;
-}
+  
 
-header {
-    background: linear-gradient(to right, #2e7d32, #1b5e20);
-    color: white;
-    padding: 40px 0;
-    text-align: center;
-}
+  
+   
 
-header p {
-    margin-top: 10px;
-    font-size: 1.1rem;
-    color: #c8e6c9;
-}
-
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.intro, .contador-secao {
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    text-align: center;
-}
-
-.cards {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
-.card {
-    background: white;
-    padding: 25px;
-    border-radius: 8px;
-    width: 45%;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    text-align: center;
-    border-top: 5px solid #2e7d32;
-}
-
-.caixa-contador {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #2e7d32;
-    margin-top: 15px;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    background-color: #e8f5e9;
-    color: #1b5e20;
-}
-
-@media (max-width: 768px) {
-    .cards {
-        flex-direction: column;
-    }
-    .card {
-        width: 100%;
-    }
-}
-// Função para criar um contador animado na tela
-function iniciarContador(objetivo, duracao) {
-    let inicio = 0;
-    const elementoContador = document.getElementById('contador');
-    const intervalo = setInterval(function() {
-        inicio += Math.floor(objetivo / duracao);
-        if (inicio >= objetivo) {
-            inicio = objetivo;
-            clearInterval(intervalo);
-        }
-        // Formata o número com pontos (Ex: 1.500)
-        elementoContador.textContent = inicio.toLocaleString('pt-BR');
-    }, 50);
-}
-
-// Inicia o contador até 8.745 toneladas quando a página carrega
-window.onload = function() {
-    iniciarContador(8745, 120); 
-};
