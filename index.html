@@ -5,58 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agro Forte, Futuro Sustentável</title>
     <style>
+        :root {
+            --cor-principal: #1b5e20;
+            --cor-secundaria: #2e7d32;
+            --cor-fundo: #f1f8e9;
+            --cor-texto: #263238;
+        }
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f9f4;
-            color: #333;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            line-height: 1.6;
         }
+
         header {
-            background-color: #2e7d32;
+            background: linear-gradient(135deg, #1b5e20, #4caf50);
             color: white;
-            padding: 40px 20px;
+            padding: 60px 20px;
             text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
+
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2.8em;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
         }
+
         header p {
-            font-size: 1.2em;
-            margin-top: 10px;
+            font-size: 1.3em;
+            margin-top: 15px;
+            opacity: 0.9;
         }
+
         .container {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 20px;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
-        .section {
+
+        .card {
             background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 40px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-conteudo {
             padding: 30px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-        .section h2 {
-            color: #2e7d32;
-            border-bottom: 2px solid #81c784;
-            padding-bottom: 10px;
+
+        .card h2 {
+            color: var(--cor-principal);
+            margin-top: 0;
+            font-size: 1.8em;
         }
-        .image-container {
-           
+
+        .imagem-box {
+            width: 100%;
+            height: 400px;
+            background-color: #e0e0e0;
+            position: relative;
         }
-        .image-container img {
+
+        /* Garante que a imagem se adapte perfeitamente sem quebrar */
+        .imagem-box img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            display: block;
         }
+
         footer {
-            background-color: #1b5e20;
-            color: white;
+            background-color: #113313;
+            color: rgba(255,255,255,0.8);
             text-align: center;
-            padding: 15px;
-            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -64,41 +98,40 @@
 
     <header>
         <h1>Agro Forte, Futuro Sustentável</h1>
-        <p>O equilíbrio perfeito entre a alta produção e a preservação do meio ambiente</p>
+        <p>O equilíbrio entre a produção de alimentos e a preservação ambiental</p>
     </header>
 
     <div class="container">
         
-        <div class="section">
-            <h2>🌱 O Desafio do Século XXI</h2>
-            <p>Alimentar uma população global em crescimento exige um agronegócio forte, tecnológico e produtivo. No entanto, o verdadeiro sucesso do setor depende da sua capacidade de conservar o solo, a água e a biodiversidade.</p>
-            
-           https://aegro.com.br/blog/inteligencia-artificial-na-agricultura/
-            <div class="image-container">
-                <img src="https://unsplash.com" alt="Plantação verde e tecnologia agrícola moderna">
+        <!-- Bloco 1 -->
+        <div class="card">
+            <div class="imagem-box">
+                <!-- Puxa o arquivo agro1.jpg que deve estar na raiz do seu GitHub -->
+                <img src="agro1.jpg" alt="Produção agrícola sustentável e preservação">
+            </div>
+            <div class="card-conteudo">
+                <h2>🌱 Produção Consciente</h2>
+                <p>O grande desafio atual é aumentar a produtividade no campo sem expandir desordenadamente as fronteiras agrícolas. Através do manejo correto do solo e da proteção dos recursos hídricos, o agronegócio se consolida como o motor econômico que respeita o amanhã.</p>
             </div>
         </div>
 
-        <div class="section">
-            <h2>🚜 Tecnologia a Serviço da Natureza</h2>
-            <p>A agricultura de precisão, o uso de bioinsumos, o plantio direto e a rotação de culturas são exemplos práticos de como a ciência impulsiona a colheita sem esgotar os recursos naturais do planeta.</p>
-            https://pt.vecteezy.com/foto/66608140-global-tecnologia-integracao-homem-usando-computador-portatil-e-telefone-com-terra-holograma-dados-visualizacao-para-o-negocio-conexao
-            <div class="image-container">
-                <img src= https:https://s1.static.brasilescola.uol.com.br/be/conteudo/images/as-transformacoes-tecnicas-permitiram-evolucao-agricultura-ao-longo-historia-55789cbf9f077.jpg
+        <!-- Bloco 2 -->
+        <div class="card">
+            <div class="imagem-box">
+                <!-- Puxa o arquivo agro2.jpg que deve estar na raiz do seu GitHub -->
+                <img src="agro2.jpg" alt="Tecnologia aplicada ao campo sustentável">
+            </div>
+            <div class="card-conteudo">
+                <h2>🚜 Tecnologia e Biodiversidade</h2>
+                <p>A tecnologia é a maior aliada do meio ambiente. Ferramentas de agricultura de precisão reduzem o desperdício de insumos, enquanto sistemas de Integração Lavoura-Pecuária-Floresta (ILPF) regeneram áreas degradadas e sequestram carbono.</p>
             </div>
         </div>
 
     </div>
 
     <footer>
-        <p>&copy; 2026 - Agro Forte, Futuro Sustentável. Criado via GitHub Pages.</p>
+        <p>&copy; 2026 - Agro Forte, Futuro Sustentável. Desenvolvido via GitHub Pages.</p>
     </footer>
 
 </body>
 </html>
-
-  
-
-  
-   
-
