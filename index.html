@@ -8,8 +8,8 @@
         :root {
             --cor-principal: #1b5e20;
             --cor-secundaria: #2e7d32;
-            --cor-fundo: #f1f8e9;
-            --cor-texto: #263238;
+            --cor-fundo: #f4f7f4;
+            --cor-texto: #212121;
         }
 
         body {
@@ -22,7 +22,7 @@
         }
 
         header {
-            background: linear-gradient(135deg, #1b5e20, #4caf50);
+            background: linear-gradient(135deg, #1b5e20, #388e3c);
             color: white;
             padding: 60px 20px;
             text-align: center;
@@ -32,13 +32,13 @@
         header h1 {
             margin: 0;
             font-size: 2.8em;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
         }
 
         header p {
             font-size: 1.3em;
             margin-top: 15px;
-            opacity: 0.9;
+            opacity: 0.95;
         }
 
         .container {
@@ -53,11 +53,6 @@
             overflow: hidden;
             margin-bottom: 40px;
             box-shadow: 0 6px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
         }
 
         .card-conteudo {
@@ -73,21 +68,24 @@
         .imagem-box {
             width: 100%;
             height: 400px;
-            background-color: #e0e0e0;
-            position: relative;
+            background-color: #eaeaea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
         }
 
-        /* Garante que a imagem se adapte perfeitamente sem quebrar */
+        /* Configuração otimizada para imagens PNG */
         .imagem-box img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: cover; /* Preenche o espaço mantendo a proporção */
             display: block;
         }
 
         footer {
-            background-color: #113313;
-            color: rgba(255,255,255,0.8);
+            background-color: #0e240f;
+            color: rgba(255,255,255,0.7);
             text-align: center;
             padding: 20px;
             font-size: 0.9em;
@@ -103,11 +101,11 @@
 
     <div class="container">
         
-        <!-- Bloco 1 -->
+        <!-- Bloco da Primeira Imagem PNG -->
         <div class="card">
             <div class="imagem-box">
-                <!-- Puxa o arquivo agro1.jpg que deve estar na raiz do seu GitHub -->
-                <img src="agro1.jpg" alt="Produção agrícola sustentável e preservação">
+                <!-- Puxa o arquivo agro1.png da raiz do seu GitHub -->
+                <img src="agro1.png" alt="Produção agrícola sustentável">
             </div>
             <div class="card-conteudo">
                 <h2>🌱 Produção Consciente</h2>
@@ -115,11 +113,11 @@
             </div>
         </div>
 
-        <!-- Bloco 2 -->
+        <!-- Bloco da Segunda Imagem PNG -->
         <div class="card">
             <div class="imagem-box">
-                <!-- Puxa o arquivo agro2.jpg que deve estar na raiz do seu GitHub -->
-                <img src="agro2.jpg" alt="Tecnologia aplicada ao campo sustentável">
+                <!-- Puxa o arquivo agro2.png da raiz do seu GitHub -->
+                <img src="agro2.png" alt="Tecnologia aplicada ao campo sustentável">
             </div>
             <div class="card-conteudo">
                 <h2>🚜 Tecnologia e Biodiversidade</h2>
@@ -135,3 +133,4 @@
 
 </body>
 </html>
+
